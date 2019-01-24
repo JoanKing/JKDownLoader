@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JKDownloadMuchViewController.h
 //  JKDownLoader
 //
 //  Created by 王冲 on 2019/1/23.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface JKDownloadMuchViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

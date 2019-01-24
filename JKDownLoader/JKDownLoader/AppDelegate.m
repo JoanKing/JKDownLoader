@@ -2,12 +2,12 @@
 //  AppDelegate.m
 //  JKDownLoader
 //
-//  Created by 王冲 on 2019/1/24.
+//  Created by 王冲 on 2019/1/23.
 //  Copyright © 2019年 JK科技有限公司. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[ViewController new]];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

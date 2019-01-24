@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E2AF19AC21F994A400FC7A55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF19AB21F994A400FC7A55 /* AppDelegate.m */; };
-		E2AF19AF21F994A400FC7A55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF19AE21F994A400FC7A55 /* ViewController.m */; };
 		E2AF19B221F994A400FC7A55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2AF19B021F994A400FC7A55 /* Main.storyboard */; };
 		E2AF19B421F994A600FC7A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2AF19B321F994A600FC7A55 /* Assets.xcassets */; };
 		E2AF19B721F994A600FC7A55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2AF19B521F994A600FC7A55 /* LaunchScreen.storyboard */; };
 		E2AF19BA21F994A600FC7A55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF19B921F994A600FC7A55 /* main.m */; };
 		E2AF19C421F994A600FC7A55 /* JKDownLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF19C321F994A600FC7A55 /* JKDownLoaderTests.m */; };
 		E2AF19CF21F994A600FC7A55 /* JKDownLoaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF19CE21F994A600FC7A55 /* JKDownLoaderUITests.m */; };
+		E2AF19F421F9950500FC7A55 /* JKDownloadFileListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF19DD21F9950400FC7A55 /* JKDownloadFileListViewController.m */; };
+		E2AF19F521F9950500FC7A55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF19DE21F9950400FC7A55 /* AppDelegate.m */; };
+		E2AF19F621F9950500FC7A55 /* JKDownloadMuchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF19DF21F9950400FC7A55 /* JKDownloadMuchViewController.m */; };
+		E2AF19F721F9950500FC7A55 /* JKDownloadSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF19E021F9950400FC7A55 /* JKDownloadSingleViewController.m */; };
+		E2AF19F821F9950500FC7A55 /* JKFilePathExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF19E321F9950400FC7A55 /* JKFilePathExtension.m */; };
+		E2AF19F921F9950500FC7A55 /* JKFilePathOperationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF19E421F9950400FC7A55 /* JKFilePathOperationExtension.m */; };
+		E2AF19FA21F9950500FC7A55 /* JKDownloaderManger.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF19E721F9950400FC7A55 /* JKDownloaderManger.m */; };
+		E2AF19FB21F9950500FC7A55 /* JKDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF19EB21F9950400FC7A55 /* JKDownLoader.m */; };
+		E2AF19FC21F9950500FC7A55 /* UIImage+JKScaleVideoImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF19EC21F9950400FC7A55 /* UIImage+JKScaleVideoImage.m */; };
+		E2AF19FD21F9950500FC7A55 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF19F121F9950500FC7A55 /* Foundation+Log.m */; };
+		E2AF19FE21F9950500FC7A55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF19F221F9950500FC7A55 /* ViewController.m */; };
+		E2AF1A0121F995C000FC7A55 /* JKVideoListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF1A0021F995C000FC7A55 /* JKVideoListsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +46,6 @@
 
 /* Begin PBXFileReference section */
 		E2AF19A721F994A400FC7A55 /* JKDownLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKDownLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2AF19AA21F994A400FC7A55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E2AF19AB21F994A400FC7A55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E2AF19AD21F994A400FC7A55 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E2AF19AE21F994A400FC7A55 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E2AF19B121F994A400FC7A55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2AF19B321F994A600FC7A55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2AF19B621F994A600FC7A55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,30 @@
 		E2AF19CA21F994A600FC7A55 /* JKDownLoaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKDownLoaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AF19CE21F994A600FC7A55 /* JKDownLoaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKDownLoaderUITests.m; sourceTree = "<group>"; };
 		E2AF19D021F994A600FC7A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2AF19DC21F9950400FC7A55 /* JKDownloadMuchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDownloadMuchViewController.h; sourceTree = "<group>"; };
+		E2AF19DD21F9950400FC7A55 /* JKDownloadFileListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKDownloadFileListViewController.m; sourceTree = "<group>"; };
+		E2AF19DE21F9950400FC7A55 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2AF19DF21F9950400FC7A55 /* JKDownloadMuchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKDownloadMuchViewController.m; sourceTree = "<group>"; };
+		E2AF19E021F9950400FC7A55 /* JKDownloadSingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKDownloadSingleViewController.m; sourceTree = "<group>"; };
+		E2AF19E221F9950400FC7A55 /* JKFilePathOperationExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKFilePathOperationExtension.h; sourceTree = "<group>"; };
+		E2AF19E321F9950400FC7A55 /* JKFilePathExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKFilePathExtension.m; sourceTree = "<group>"; };
+		E2AF19E421F9950400FC7A55 /* JKFilePathOperationExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKFilePathOperationExtension.m; sourceTree = "<group>"; };
+		E2AF19E521F9950400FC7A55 /* JKFilePathExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKFilePathExtension.h; sourceTree = "<group>"; };
+		E2AF19E721F9950400FC7A55 /* JKDownloaderManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKDownloaderManger.m; sourceTree = "<group>"; };
+		E2AF19E821F9950400FC7A55 /* UIImage+JKScaleVideoImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKScaleVideoImage.h"; sourceTree = "<group>"; };
+		E2AF19E921F9950400FC7A55 /* JKDownLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDownLoader.h; sourceTree = "<group>"; };
+		E2AF19EA21F9950400FC7A55 /* JKDownloaderManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDownloaderManger.h; sourceTree = "<group>"; };
+		E2AF19EB21F9950400FC7A55 /* JKDownLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKDownLoader.m; sourceTree = "<group>"; };
+		E2AF19EC21F9950400FC7A55 /* UIImage+JKScaleVideoImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKScaleVideoImage.m"; sourceTree = "<group>"; };
+		E2AF19ED21F9950400FC7A55 /* JKDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDown.h; sourceTree = "<group>"; };
+		E2AF19EE21F9950400FC7A55 /* JKDownloadFileListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDownloadFileListViewController.h; sourceTree = "<group>"; };
+		E2AF19EF21F9950400FC7A55 /* JKDownloadSingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDownloadSingleViewController.h; sourceTree = "<group>"; };
+		E2AF19F021F9950500FC7A55 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2AF19F121F9950500FC7A55 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		E2AF19F221F9950500FC7A55 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E2AF19F321F9950500FC7A55 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E2AF19FF21F995C000FC7A55 /* JKVideoListsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKVideoListsViewController.h; sourceTree = "<group>"; };
+		E2AF1A0021F995C000FC7A55 /* JKVideoListsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKVideoListsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +131,21 @@
 		E2AF19A921F994A400FC7A55 /* JKDownLoader */ = {
 			isa = PBXGroup;
 			children = (
-				E2AF19AA21F994A400FC7A55 /* AppDelegate.h */,
-				E2AF19AB21F994A400FC7A55 /* AppDelegate.m */,
-				E2AF19AD21F994A400FC7A55 /* ViewController.h */,
-				E2AF19AE21F994A400FC7A55 /* ViewController.m */,
+				E2AF19F021F9950500FC7A55 /* AppDelegate.h */,
+				E2AF19DE21F9950400FC7A55 /* AppDelegate.m */,
+				E2AF19F321F9950500FC7A55 /* ViewController.h */,
+				E2AF19F221F9950500FC7A55 /* ViewController.m */,
+				E2AF19F121F9950500FC7A55 /* Foundation+Log.m */,
+				E2AF19FF21F995C000FC7A55 /* JKVideoListsViewController.h */,
+				E2AF1A0021F995C000FC7A55 /* JKVideoListsViewController.m */,
+				E2AF19EE21F9950400FC7A55 /* JKDownloadFileListViewController.h */,
+				E2AF19DD21F9950400FC7A55 /* JKDownloadFileListViewController.m */,
+				E2AF19DC21F9950400FC7A55 /* JKDownloadMuchViewController.h */,
+				E2AF19DF21F9950400FC7A55 /* JKDownloadMuchViewController.m */,
+				E2AF19EF21F9950400FC7A55 /* JKDownloadSingleViewController.h */,
+				E2AF19E021F9950400FC7A55 /* JKDownloadSingleViewController.m */,
+				E2AF19E621F9950400FC7A55 /* JKDownLoader */,
+				E2AF19E121F9950400FC7A55 /* JKFilePathOperation */,
 				E2AF19B021F994A400FC7A55 /* Main.storyboard */,
 				E2AF19B321F994A600FC7A55 /* Assets.xcassets */,
 				E2AF19B521F994A600FC7A55 /* LaunchScreen.storyboard */,
@@ -130,6 +171,31 @@
 				E2AF19D021F994A600FC7A55 /* Info.plist */,
 			);
 			path = JKDownLoaderUITests;
+			sourceTree = "<group>";
+		};
+		E2AF19E121F9950400FC7A55 /* JKFilePathOperation */ = {
+			isa = PBXGroup;
+			children = (
+				E2AF19E221F9950400FC7A55 /* JKFilePathOperationExtension.h */,
+				E2AF19E421F9950400FC7A55 /* JKFilePathOperationExtension.m */,
+				E2AF19E521F9950400FC7A55 /* JKFilePathExtension.h */,
+				E2AF19E321F9950400FC7A55 /* JKFilePathExtension.m */,
+			);
+			path = JKFilePathOperation;
+			sourceTree = "<group>";
+		};
+		E2AF19E621F9950400FC7A55 /* JKDownLoader */ = {
+			isa = PBXGroup;
+			children = (
+				E2AF19ED21F9950400FC7A55 /* JKDown.h */,
+				E2AF19EA21F9950400FC7A55 /* JKDownloaderManger.h */,
+				E2AF19E721F9950400FC7A55 /* JKDownloaderManger.m */,
+				E2AF19E921F9950400FC7A55 /* JKDownLoader.h */,
+				E2AF19EB21F9950400FC7A55 /* JKDownLoader.m */,
+				E2AF19E821F9950400FC7A55 /* UIImage+JKScaleVideoImage.h */,
+				E2AF19EC21F9950400FC7A55 /* UIImage+JKScaleVideoImage.m */,
+			);
+			path = JKDownLoader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +328,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2AF19AF21F994A400FC7A55 /* ViewController.m in Sources */,
+				E2AF19F921F9950500FC7A55 /* JKFilePathOperationExtension.m in Sources */,
+				E2AF19F721F9950500FC7A55 /* JKDownloadSingleViewController.m in Sources */,
 				E2AF19BA21F994A600FC7A55 /* main.m in Sources */,
-				E2AF19AC21F994A400FC7A55 /* AppDelegate.m in Sources */,
+				E2AF19F421F9950500FC7A55 /* JKDownloadFileListViewController.m in Sources */,
+				E2AF19F821F9950500FC7A55 /* JKFilePathExtension.m in Sources */,
+				E2AF19FD21F9950500FC7A55 /* Foundation+Log.m in Sources */,
+				E2AF19FE21F9950500FC7A55 /* ViewController.m in Sources */,
+				E2AF19FA21F9950500FC7A55 /* JKDownloaderManger.m in Sources */,
+				E2AF19F621F9950500FC7A55 /* JKDownloadMuchViewController.m in Sources */,
+				E2AF19FC21F9950500FC7A55 /* UIImage+JKScaleVideoImage.m in Sources */,
+				E2AF19F521F9950500FC7A55 /* AppDelegate.m in Sources */,
+				E2AF1A0121F995C000FC7A55 /* JKVideoListsViewController.m in Sources */,
+				E2AF19FB21F9950500FC7A55 /* JKDownLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

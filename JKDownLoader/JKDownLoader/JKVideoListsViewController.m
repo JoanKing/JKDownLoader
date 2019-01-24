@@ -1,47 +1,32 @@
 //
-//  ViewController.m
+//  JKVideoListsViewController.m
 //  JKDownLoader
 //
-//  Created by 王冲 on 2019/1/23.
+//  Created by 王冲 on 2019/1/24.
 //  Copyright © 2019年 JK科技有限公司. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "JKDown.h"
-// 1、NSURLSession简单的使用
-#import "JKDownloadSingleViewController.h"
-// 2、NSURLSession下载
-#import "JKDownloadMuchViewController.h"
-// 资源列表
 #import "JKVideoListsViewController.h"
-// 我的下载列表
-#import "JKDownloadFileListViewController.h"
-
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+#import "JKDown.h"
+@interface JKVideoListsViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong) UITableView *tableView;
 
 @property(nonatomic,strong) NSMutableArray *dataArray;
 
+
 @end
 
-@implementation ViewController
+@implementation JKVideoListsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"下载器";
+    
+    self.title = @"资源列表";
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"我的下载" style:UIBarButtonItemStylePlain target:self action:@selector(clickDownLoad)];
-    [self.dataArray addObjectsFromArray:@[@"单个视频下载",@"多个视频下载",@"资源列表"]];
-    
+    [self.dataArray addObjectsFromArray:@[@"专家讲座",@"俄罗斯舞蹈"]];
     [self.view addSubview:self.tableView];
-}
-
--(void)clickDownLoad{
-    
-    JKDownloadFileListViewController *jkDownloadFileListViewController = [[JKDownloadFileListViewController alloc]init];
-    [self.navigationController pushViewController:jkDownloadFileListViewController animated:YES];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -112,18 +97,11 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     NSString *cell_name = [NSString stringWithFormat:@"%@",self.dataArray[indexPath.row]];
-    if ([cell_name isEqualToString:@"单个视频下载"]) {
+
+    if ([cell_name isEqualToString:@"专家讲座"]) {
         
-        JKDownloadSingleViewController *jkDownloadSingleViewController = [JKDownloadSingleViewController new];
-        [self.navigationController pushViewController:jkDownloadSingleViewController animated:YES];
-    }else if ([cell_name isEqualToString:@"多个视频下载"]){
-        
-        JKDownloadMuchViewController *jkDownloadMuchViewController = [JKDownloadMuchViewController new];
-        [self.navigationController pushViewController:jkDownloadMuchViewController animated:YES];
-    }else if ([cell_name isEqualToString:@"资源列表"]){
-        
-        JKVideoListsViewController *jkVideoListsViewController = [JKVideoListsViewController new];
-        [self.navigationController pushViewController:jkVideoListsViewController animated:YES];
+    }else if ([cell_name isEqualToString:@"俄罗斯舞蹈"]){
+       
     }
 }
 
